@@ -4,9 +4,9 @@ import ProjectPage from './components/ProjectPage.js';
 import Navbar from './components/Navbar.js';
 
 Promise.all([
-      d3.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vRzuPHi-ZjhY9HfLv7HjMCCwy6NyzWJyxjj03fHfSJtTHAkCkvoN8Lm705rWP-y5LFMDmXj-9rBe_qC/pub?output=csv"),
-      d3.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSNhuYWG4ylr1-xZSDcBunRrKJyLqPIC37VOGoW8QG0Knve2YeIem2az2t0vVXz1769WALBxjs3U_J2/pub?output=csv"),
-      d3.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vQFY7mscoie7ADrYeLpnUwHhA3wDZ9lF0Go-n-q_IT2m-2BrtcZ9bvAv8PSIsQBjAFy_4YypxLRmj9U/pub?output=csv"),
+      d3.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vRy8poInlkaNSf_BdukNls_X08t2e4WZhxTc6P7sWgTRmHNuWpOymGcLTS6-cf8yCszQU_AnLQKoVCQ/pub?output=csv"),
+      d3.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vQMHkiH8fjb1kyJ8O1Wx9T4okvKXYt6-PrCAmWoJnwUc6zA6PreCtQdjr5mrck7psllyzE6lFB_ALiN/pub?output=csv"),
+      d3.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vRm8A1YMpsg_u--X7O-oCneWwcKQnQSmYrJ0k9SbWrP3nVI0_HBagIjMShlxA29dU7JyIsXDb2ZJxux/pub?output=csv"),
       ])
       .then(([about, themes, projects]) => {
         const data = {about, themes, projects};
